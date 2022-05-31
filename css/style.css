@@ -1,0 +1,674 @@
+
+
+
+/* ------------------------------------------
+                Common CSS Start 
+------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,li{
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------------------
+                Common CSS Start 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                Header Part Start 
+------------------------------------------- */
+.main_menu{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 11;
+}
+.navbar-brand{
+    color: #ffffff !important;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Montserrat-Bold;
+}
+.main_menu ul li a{
+    color: #ffffff !important;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    text-transform: uppercase;
+    margin-left: 55px;
+    position: relative;
+    transition: all linear .3s;
+}
+.main_menu ul li a::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #fce38a;
+    transition: all linear .3s;
+}
+.main_menu ul li a:hover{
+    color: #fce38a !important;
+}
+.main_menu ul li a:hover::after{
+    width: 100% !important;
+}
+
+/* ------------------------------------------
+                Header Part End 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                Banner Part Start 
+------------------------------------------- */
+.banner_item{
+    padding: 180px 0 0;
+    position: relative;
+    z-index: 1;
+}
+.banner_item::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #ea8483, #f3977d, #f6ab7c, #f5c180, #f1d68a);
+    opacity: .9;
+    z-index: -1;
+}
+.banner_text h3{
+    color: #ffffff;
+    font-size: 72px;
+    font-family: KaushanScript-Regular;
+}
+.banner_text h1{
+    color: #ffffff;
+    font-size: 150px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.banner_text h1::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -30px;
+    width: 70px;
+    height: 3px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+.banner_text a{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    padding: 12px 30px;
+    margin-top: 70px;
+    line-height: 1;
+}
+.banner_text a:hover{
+    background: #eeca89;
+    border-color: #eeca89;
+}
+.slider_nav{
+    margin-top: 120px;
+}
+.slider_nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.slider_nav ul li{
+    width: 22%;
+    border-top: 3px solid #ffffff;
+    margin: 15px;
+    position: relative;
+    
+}
+.slider_nav ul li::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -3px;
+    width: 0;
+    height: 3px;
+    background: #ea8483;
+    transition: all linear .3s;
+}
+.slider_nav ul li:hover::after{
+    width: 70px;
+    color: #ea8483;
+}
+.slider_nav ul li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.slider_nav ul li a span{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Montserrat-Bold;
+    transition: all linear .3s;
+}
+
+/* ------------------------------------------
+                Banner Part End 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                About Part Start 
+------------------------------------------- */
+#about{
+    padding: 70px 0 110px;
+}
+.common_head h4{
+    color: #333333;
+    font-size: 24px;
+    font-family: KaushanScript-Regular;
+    padding-bottom: 10px;
+}
+.common_head h2{
+    color: #333333;
+    font-size: 30px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.common_head h2::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background: #f38181;
+    transform: translateX(-50%);
+}
+.description{
+    color: #999999;
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    line-height: 24px;
+    padding: 30px 0 50px 0;
+}
+.box{
+    cursor: pointer;
+}
+.inner-box{
+    background: #95e1d3 !important;
+    width: 0;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.box:hover .inner-box{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    cursor: pointer;
+}
+.overly{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(#e8ae8396, #eab5629e);
+    transition: all linear .3s;
+}
+.wrapper:hover .overly{
+    opacity: 1;
+}
+.about-overly-text{
+    text-align: center;
+    color: #ffffff !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-overly-text h5{
+    font-size: 18px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+}
+.about-overly-text i{
+    font-size: 24px !important;
+    color: #ffffff;
+}
+/* ------------------------------------------
+                About Part End 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                Counter Part Start 
+------------------------------------------- */
+#counter{
+    background: #95e1d3;
+}
+.counter_head{
+    color: #ffffff;
+    font-size: 72px;
+    font-family: Montserrat-Bold;
+}
+.counter_title{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    text-transform: uppercase;
+}
+.counter_col{
+    padding: 50px 0;
+    border-left: 2px solid #b5eae0;
+}
+.right{
+    border-right: 2px solid #b5eae0;
+}
+/* ------------------------------------------
+                Counter Part End 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                Services Part Start 
+------------------------------------------- */
+#service{
+    padding: 80px 0;
+}
+#service hr{
+    margin: 35px 0 37px;
+    background: #c0bfbf;
+}
+.single_service i{
+    font-size: 40px;
+    color: #95e1d3;
+}
+.single_service h2{
+    color: #333333;
+    font-size: 14px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.single_service p{
+    color: #999999;
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    line-height: 24px;
+}
+/* ------------------------------------------
+                Services Part End 
+------------------------------------------- */
+
+/* ------------------------------------------
+                Unique Design Part Start 
+------------------------------------------- */
+.device_item{
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+.device_item::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+.overlap-sm-img img{
+    top: 34%;
+    right: 20%;
+}
+/* ------------------------------------------
+                Unique Design Part End 
+------------------------------------------- */
+
+/* ------------------------------------------
+                Accordion Part Start 
+------------------------------------------- */
+#accordion{
+    padding: 80px 0;
+}
+.accordion_body{
+    font-size: 15px;
+    color: #999999;
+    font-family: Roboto-Italic;
+    line-height: 26px;
+    word-spacing: 5px;
+    letter-spacing: -0.5px;
+    height: 180px;
+    overflow-y: scroll;
+}
+.accordion-item{
+    border: 1px solid #f5f5f5;
+}
+.accordion-button{
+    font-family: Montserrat-Bold;
+	font-size: 14px;
+	color: #333333 !important;
+    text-transform: uppercase !important;
+}
+.accordion-header i{
+    font-size: 20px !important;
+    color: #95E1D3;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 0.25rem; 
+    border-bottom-left-radius: 0.25rem; 
+    border: 1px solid #f5f5f5;
+}
+
+
+/* ------------------------------------------
+                Accordion Part End 
+------------------------------------------- */
+
+/* ------------------------------------------
+                Review Part Start 
+------------------------------------------- */
+
+/* ------------------------------------------
+                Review Part End 
+------------------------------------------- */
+/* ------------------------------------------
+                Team Part Start 
+------------------------------------------- */
+#team{
+    padding-bottom: 100px;
+}
+.overly-item i{
+    color: #f38181;
+    font-size: 24px;
+    background: #fce38a;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    transition: all linear .3s;
+}
+.overly-item i:hover{
+    background: #f38181;
+    color: #ffffff;
+}
+.overly-text{
+    text-align: center;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.member_info h3{
+    font-family: Montserrat-Bold;
+	font-size: 14px;
+	color: #333333;
+    text-transform: uppercase;
+}
+.member_info p{
+    font-size: 15px;
+    color: #999999;
+    font-family: Roboto-Italic;
+}
+/* ------------------------------------------
+                Team Part End 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                Blog Part Start 
+------------------------------------------- */
+#blog{
+    padding-bottom: 80px;
+}
+.blog_poster{
+    gap: 20px;
+}
+.blog_poster{
+    position: relative;
+}
+.blog_calender{
+    position: absolute;
+    padding: 8px 16px;
+    background: #95e1d3;
+    left: -10px;
+    bottom: 10px;
+}
+.calender_date{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Montserrat-Bold;
+}
+.calender_month{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Roboto-Italic;
+}
+.blog_title{
+    color: #333333;
+    font-size: 15px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+}
+.blog_decripion{
+    color: #999999;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    line-height: 24px;
+}
+.blog_comments{
+    border-top: 1px solid #e5e5e5;
+}
+.blog_comments i{
+    color: #95E1D3;
+}
+/* ------------------------------------------
+                Blog Part End 
+------------------------------------------- */
+/* ------------------------------------------
+                Work Part Start 
+------------------------------------------- */
+#work{
+    padding-bottom: 80px;
+}
+.work-title{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+}
+.work-subtitle{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Roboto-Italic;
+}
+/* ------------------------------------------
+                Work Part End 
+------------------------------------------- */
+
+/* ------------------------------------------
+                Map Part Start 
+------------------------------------------- */
+.map_bg{
+    padding: 50px 0;
+    color: #f38181;
+    position: relative;
+    z-index: 1;
+}
+.map_bg::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+.map_bg h3{
+    font-size: 24px;
+    font-family: Montserrat-Bold;
+    position: relative;
+}
+.map_bg a{
+    color: #f38181;
+}
+.map_bg .text::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -20px;
+    height: 3px;
+    width: 60px;
+    background: #f38181;
+    transform: translateX(-50%); 
+}
+.blog_comments span{
+    color: #999999;
+    font-size: 15px;
+    font-family: Roboto-Italic;
+}
+
+
+/* ------------------------------------------
+                Map Part End 
+------------------------------------------- */
+
+
+/* ------------------------------------------
+                Footer Part Start 
+------------------------------------------- */
+#footer{
+    padding: 60px 0 20px;
+    background: #f8f8f8;
+}
+.footer-title{
+    color: #cccccc;
+    font-size: 46px;
+    font-family: Montserrat-Bold;
+}
+.footer-desc{
+    color: #999999;
+    font-size: 15px;
+    font-family: Roboto-Regular;
+}
+.footer-follower{
+    color: #333333;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer-follower span{
+    color: #333333;
+    font-size: 18px;
+    font-family: Montserrat-Bold;
+}
+.follow-us{
+    color: #999999;
+    font-size: 16px;
+    font-family: Roboto-Italic;
+}
+.social-icon i{
+    font-size: 18px;
+    color: #95e1d3;
+    transition: all linear .3s;
+}
+.social-icon i:hover{
+    transform: scale(1.2);
+    color: #10eac2;
+}
+.input-subscribe{
+    border-radius: 0;
+    padding: 12px 12px;
+}
+.input-subscribe:focus{
+    box-shadow: 0 0 0 0;
+}
+.subscribe-btn{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Montserrat-Bold;
+    background: #95e1d3;
+    transition: all linear .3s;
+}
+.subscribe-btn:hover{
+    background: #10eac2;
+    color: #ffffff;
+}
+.input{
+    background: #ffffff;
+}
+.input-email::placeholder{
+    color: #999999;
+    font-size: 16px;
+    font-family: Roboto-Italic;
+}
+.blog-title{
+    color: #333333;
+    font-size: 15px;
+    font-family: Montserrat-Bold;
+}
+.f-blog-title{
+    color: #333333;
+    font-size: 12px;
+    font-family: Montserrat-Regular;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+.f-blog-date{
+    color: #999999;
+    font-size: 13px;
+    font-family: Roboto-Italic;
+}
+.insta-title{
+    color: #333333;
+    font-size: 15px;
+    font-family: Montserrat-Bold;
+}
+.view-more{
+    color: #999999;
+    font-size: 14px;
+    font-family: Roboto-Italic;
+}
+.foot-last{
+    border: 1px solid #d7d6d6;
+}
+.footer-last{
+    color: #333333;
+    font-size: 14px;
+    font-family: Montserrat-Bold;
+}
+span{
+    color: #f38181;
+    font-size: 14px;
+    font-family: Montserrat-Bold;
+}
+/* ------------------------------------------
+                Footer Part End 
+------------------------------------------- */
